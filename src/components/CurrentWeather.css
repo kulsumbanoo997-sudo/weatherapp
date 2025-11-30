@@ -1,0 +1,122 @@
+.current-weather {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.weather-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+    width: fit-content;
+}
+
+.location-badge h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.temp {
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 1;
+    background: linear-gradient(to bottom, #fff, #94a3b8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+}
+
+.weather-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.weather-icon {
+    filter: drop-shadow(0 0 20px rgba(56, 189, 248, 0.3));
+}
+
+.weather-icon.sun {
+    color: #fcd34d;
+    filter: drop-shadow(0 0 30px rgba(252, 211, 77, 0.4));
+}
+
+.weather-icon.cloud {
+    color: #94a3b8;
+}
+
+.weather-icon.rain {
+    color: #38bdf8;
+}
+
+.condition-tag {
+    background: var(--accent-gradient);
+    padding: 0.4rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+}
+
+.weather-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.grid-item {
+    background: rgba(15, 23, 42, 0.3);
+    padding: 1.2rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    background: rgba(15, 23, 42, 0.5);
+}
+
+.icon-box {
+    background: rgba(56, 189, 248, 0.1);
+    padding: 10px;
+    border-radius: 12px;
+    color: var(--accent-primary);
+}
+
+.grid-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-info span {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.grid-info strong {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
